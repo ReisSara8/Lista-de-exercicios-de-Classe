@@ -1,0 +1,144 @@
+import exerciciosarraylist.Filme;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ * @author Alunos
+ */
+public class FilmeJUnitTest {
+    
+   @Test
+   public void testeDefinirEObterTitulo(){
+   Filme oblivion = new Filme();
+   oblivion.setTitulo("Oblivion");
+   assertEquals("Oblivion", oblivion.getTitulo());
+   }
+   
+   @Test
+   public void testeDefinirEObterTituloOriginal(){
+   Filme amnesia = new Filme();
+   amnesia.setTitulo("Amnésia");
+   amnesia.setTituloOriginal("Amnesiac");
+   assertEquals("Amnesiac", amnesia.getTituloOriginal());
+   }
+   
+   @Test
+   public void testeDefinirEObterGenero(){
+   Filme clubeDosCinco = new Filme();
+   clubeDosCinco.setTitulo("Clube dos Cinco");
+   clubeDosCinco.setTituloOriginal("The breakfast club");
+   clubeDosCinco.setGenero("Drama");
+   assertEquals("Drama", clubeDosCinco.getGenero());
+  
+   }
+   
+   @Test
+   public void testeDefinirEObterDiretor(){
+   Filme bladeRunner = new Filme();
+   bladeRunner.setTitulo("Blade Runner: O caçador de androides");
+   bladeRunner.setTituloOriginal("Blade Runner");
+   bladeRunner.setGenero("Ficção científica");
+   bladeRunner.setDiretor("Ridley Scott");
+   assertEquals("Ridley Scott", bladeRunner.getDiretor());
+   
+   }
+   
+   @Test
+   public void testeDefinirEObterClassificacao(){
+   Filme diva = new Filme();
+   diva.setTitulo("Divã");
+   diva.setTituloOriginal("Divã");
+   diva.setGenero("Comédia");
+   diva.setDiretor("José Alvarenga Júnior");
+   diva.setClassificacao("+12 anos");
+   assertEquals("+12 anos", diva.getClassificacao());
+   }
+   
+   @Test
+   public void testeDefinirEObterAnoLancamento(){
+   Filme jecaTatu = new Filme();
+   jecaTatu.setTitulo("Jeca Tatu");
+   jecaTatu.setTituloOriginal("Jeca Tatu");
+   jecaTatu.setGenero("Comédia");
+   jecaTatu.setDiretor("Milton Amaral");
+   jecaTatu.setClassificacao("Livre");
+   jecaTatu.setAnoLancamento((short) 1959);
+   assertEquals(1959, jecaTatu.getAnoLancamento());
+   }
+   
+   @Test
+   public void testeDefinirEObterAnoProducao(){
+   Filme jogosVorazes = new Filme();
+   jogosVorazes.setTitulo("Jogos Vorazes");
+   jogosVorazes.setTituloOriginal("The Hunger Games");
+   jogosVorazes.setGenero("Romance");
+   jogosVorazes.setDiretor("Gary Ross");
+   jogosVorazes.setClassificacao("+12 anos");
+   jogosVorazes.setAnoLancamento((short) 2012);
+   jogosVorazes.setAnoProducao((short) 2011);
+   assertEquals(2011, jogosVorazes.getAnoProducao());
+   }
+   
+   @Test
+   public void testeDefinirEObterEspectadores(){        
+   Filme xMen = new Filme();
+   xMen.setTitulo("X-men: Dias de um futuro esquecido");
+   xMen.setTituloOriginal("X-Men: Days of Future Past ");
+   xMen.setGenero("Ficção científica");
+   xMen.setDiretor("Bryan Singer");
+   xMen.setClassificacao("+12 anos");
+   xMen.setAnoLancamento((short) 2014);
+   xMen.setAnoProducao((short) 2013);
+   xMen.setEspectadores((int) 1200000);
+   assertEquals(1200000, xMen.getEspectadores());
+   }
+   
+   @Test
+   public void testeDefinirEObterMediaPreco(){
+   Filme avengers = new Filme();
+   avengers.setTitulo("Vingadores: Guerra Infinita");
+   avengers.setTituloOriginal("Avengers: Infinity War");
+   avengers.setGenero("Aventura");
+   avengers.setDiretor("Joe Russo e Anthony Russo");
+   avengers.setClassificacao("+13 anos");
+   avengers.setAnoLancamento((short) 2018);
+   avengers.setAnoProducao((short) 2017);
+   avengers.setEspectadores((int) 50000000);
+   avengers.setMediaPreco((double) 30);
+   assertEquals(30, avengers.getMediaPreco(),0);
+   
+   }
+   
+   @Test
+   public void testeDefinirEObterDataLancamentoBrasil(){
+   Filme baterOuCorrer = new Filme();
+   baterOuCorrer.setTitulo("Bater ou correr");
+   baterOuCorrer.setTituloOriginal("Shanghai Noon");
+   baterOuCorrer.setGenero("Faroeste");
+   baterOuCorrer.setDiretor("Tom Dey");
+   baterOuCorrer.setClassificacao("+12 anos");
+   baterOuCorrer.setAnoLancamento((short) 2000);
+   baterOuCorrer.setAnoProducao((short) 1999);
+   baterOuCorrer.setEspectadores((int) 1000000);
+   baterOuCorrer.setMediaPreco((double) 20.0);
+   //baterOuCorrer.setDataLancamentoBrasil(());
+   //assertEquals(, baterOuCorrer.getDataLancamentoBrasil)
+   }
+   
+   @Test
+   public void testeDefinirEObterIdioma(){
+   Filme aFamiliaBelier = new Filme();
+   aFamiliaBelier.setTitulo("A Família Bélier");
+   aFamiliaBelier.setTituloOriginal("La Famille Bélier");
+   aFamiliaBelier.setGenero("Comédia");
+   aFamiliaBelier.setDiretor("Eric Lartigau");
+   aFamiliaBelier.setClassificacao("");
+   aFamiliaBelier.setAnoLancamento((short) 2014);
+   aFamiliaBelier.setAnoProducao((short) 2013);
+   aFamiliaBelier.setEspectadores((int) 1000000);
+   aFamiliaBelier.setMediaPreco((double) 22.0);
+   //baterOuCorrer.setDataLancamentoBrasil(());
+   aFamiliaBelier.setIdioma("Francês");
+   assertEquals("Francês", aFamiliaBelier.getIdioma());
+   }
+}
