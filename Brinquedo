@@ -1,0 +1,67 @@
+package exerciciosdeclasse;
+
+/**
+ * @author user
+ */
+public class Brinquedo {
+    
+    private String nome, marca, modelo, codigo, codigoDeBarras, descricao;
+    private double preco;
+    
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    
+    public String getNome(){
+        return nome;
+    }
+    
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+    
+    public String getMarca(){
+        return marca;
+    }
+    
+    public void setModelo(String modelo){
+        this.modelo = modelo;
+    }
+    
+    public String getModelo(){
+        return modelo;
+    }
+    
+     public void setCodigo(String codigo){
+        this.codigo = codigo;
+    }
+    
+    public String getCodigo(){
+        return codigo;
+    }
+    
+     public void setCodigoDeBarras(String codigoDeBarras){
+        this.codigoDeBarras = codigoDeBarras;
+    }
+    
+    public String gerCodigoDeBarras(){
+        return codigoDeBarras;
+    }
+    
+     public void setDescricao(String descricao){
+        this.descricao = descricao;
+    }
+    
+    public String getDescricao(){
+        return descricao;
+    }
+    
+    public void setPreco(double preco){
+        this.preco = preco;
+    }
+    
+    public double getPreco(){
+        return preco;
+    }    
+    
+}
