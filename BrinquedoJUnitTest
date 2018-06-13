@@ -1,0 +1,58 @@
+import exerciciosdeclasse.Brinquedo;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ * @author user
+ */
+public class BrinquedoJUnitTest{
+    
+    @Test
+    public void testarEDefinirNome(){
+    Brinquedo boneca = new Brinquedo();
+    boneca.setNome("Barbie sereia");
+    assertEquals("Barbie sereia", boneca.getNome());
+    }
+    
+    @Test
+    public void testarEDefinirMarca(){
+    Brinquedo bancoImobiliario = new Brinquedo();
+    bancoImobiliario.setMarca("Estrela");
+    assertEquals("Estrela", bancoImobiliario.getMarca());
+    }
+    
+    @Test
+    public void testarEDefinirModelo(){
+    Brinquedo playStation2 = new Brinquedo();
+    playStation2.setModelo("39001");
+    assertEquals("39001", playStation2.getModelo());
+    }
+    
+    @Test
+    public void testarEDefinirCodigo(){
+    Brinquedo maxSteelBoneco = new Brinquedo();
+    maxSteelBoneco.setCodigo("5800126");
+    assertEquals("5800126", maxSteelBoneco.getCodigo());
+    }
+    
+    @Test
+    public void testarEDefinirCodigoDeBarras(){
+    Brinquedo hulkBoneco = new Brinquedo();
+    hulkBoneco.setCodigoDeBarras("0630509390540");
+    assertEquals("0630509390540", hulkBoneco.gerCodigoDeBarras());
+    }
+    
+    @Test
+    public void testarEDefinirDescricao(){
+    Brinquedo mrPotato = new Brinquedo();
+    mrPotato.setDescricao("Boneco do Mr. Potato Head vestido com as cores do Brasil!");
+    assertEquals("Boneco do Mr. Potato Head vestido com as cores do Brasil!", mrPotato.getDescricao());
+    }
+    
+    @Test
+    public void testarEDefinirPreco(){
+    Brinquedo classicLEGO = new Brinquedo();
+    classicLEGO.setPreco((double) 93.90);
+    assertEquals(93.90, classicLEGO.getPreco(),0);
+    }
+}
